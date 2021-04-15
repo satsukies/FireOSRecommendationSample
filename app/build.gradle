@@ -15,6 +15,10 @@ android {
     versionName "1.0"
   }
 
+  dataBinding {
+    enabled = true
+  }
+
   buildTypes {
     release {
       minifyEnabled false
@@ -28,4 +32,9 @@ dependencies {
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   implementation 'androidx.core:core-ktx:1.3.2'
   implementation 'androidx.leanback:leanback:1.0.0'
+
+  implementation "androidx.recommendation:recommendation:1.0.0"
+  implementation 'androidx.appcompat:appcompat:1.2.0'
+  implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+
 }
